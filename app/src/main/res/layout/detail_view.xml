@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+  >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+            android:textSize="22dp"
+      android:id="@+id/detailTitle"/>
+
+
+        <ImageView
+            android:layout_width="400sp"
+            android:layout_height="400sp"
+            android:layout_gravity="center"
+            android:layout_below="@id/detailTitle"
+            android:id="@+id/detailImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="bottom"
+        android:textSize="16dp"
+        android:layout_below="@id/detailTitle"
+        android:id="@+id/detailDescription"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/detailDescription"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/visitLink"
+                android:text="@string/visit"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shareLink"
+                android:text="@string/share"
+                />
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>
